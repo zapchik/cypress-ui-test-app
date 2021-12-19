@@ -74,6 +74,17 @@
       "balance": 75369,
       "createdAt": "2020-02-11T21:26:46.510Z",
       "modifiedAt": "2020-05-21T15:15:33.944Z"
+    },
+    {
+      "id": "Saq9Zbh3m",
+      "uuid": "b85e8cc3-c0a7-4043-86a5-14ad870256ae",
+      "firstName": "Evgen2",
+      "lastName": "Toporovsky2",
+      "username": "Evgen772",
+      "password": "$2a$10$aOtCiKEausp/k5JHcDjjfefr6PRcSWLxoajtJaL6zjRCWOV6m/V5C",
+      "balance": 0,
+      "createdAt": "2021-12-19T03:10:52.434Z",
+      "modifiedAt": "2021-12-19T03:10:52.434Z"
     }
   ],
   "contacts": [
@@ -253,6 +264,17 @@
       "isDeleted": false,
       "createdAt": "2019-09-30T14:20:07.043Z",
       "modifiedAt": "2020-05-21T22:40:28.910Z"
+    },
+    {
+      "id": "W64P5f7v3",
+      "uuid": "a49f5531-dd62-45d8-8aa6-751fa7178af9",
+      "userId": "Saq9Zbh3m",
+      "bankName": "Privat",
+      "accountNumber": "123456789",
+      "routingNumber": "123456789",
+      "isDeleted": false,
+      "createdAt": "2021-12-19T03:11:19.993Z",
+      "modifiedAt": "2021-12-19T03:11:19.993Z"
     }
   ],
   "transactions": [
