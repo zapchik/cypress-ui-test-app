@@ -1,8 +1,13 @@
 Enviroment:
+
 OS - Ubuntu 20.04 (Oracle VM VirtualBox)
+
 Browser - Google Chrome 96.0.4664.110 (64 bit)
+
 Visual Studio Code 1.63.
+
 Yarn 1.22.15
+
 node.js 12.22.7
 
 'Sign in' page
