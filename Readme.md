@@ -13,8 +13,11 @@ node.js 12.22.7
 'Sign in' page
 
 1. The website logo '[$]' must be present on 'Sign in' page 
+
 	Preconditions: User must not be logged in
+	
 	STR: 1.Go to the https://localhost:3000/signin
+	
 	     2.Checking for a logo
 
 	ER: The logo is present 
