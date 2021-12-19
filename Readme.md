@@ -22,101 +22,144 @@ node.js 12.22.7
 
 	ER: The logo is present 
 
-2. The website logo 'Real World App' must be present on 'Sign in' page 
+2. The website logo 'Real World App' must be present on 'Sign in' page
+ 
 	Preconditions: User must not be logged in
+	
 	STR: 1.Go to the https://localhost:3000/signin
+	
 	     2.Checking for a logo
 
 	ER: The logo is present	
 
-3. Website title h1 'Sign in' must be present on 'Sign in' page 
+3. Website title h1 'Sign in' must be present on 'Sign in' page
+ 
 	Preconditions: User must not be logged in
+	
 	STR: 1.Go to the https://localhost:3000/signin
+	
 	     2.Checking for a title h1
 
 	ER: The title h1 is present
 
-4. The page 'Sign in' of the website must contain a field for entering the username 
+4. The page 'Sign in' of the website must contain a field for entering the username
+ 
 	Preconditions: User must not be logged in
+	
 	STR: 1.Go to the https://localhost:3000/signin
+	
 	     2.Checking for the presence of a field for entering a username
 
 	ER: Username field is present
 
 5. The username field on the page 'Sign in' must be titled 'Username'
+
 	Preconditions: User must not be logged in
+	
 	STR: 1.Go to the https://localhost:3000/signin
+	
 	     2.Checking the name of the field for entering the username
 
 	ER: The username input field is titled 'Username'
 
 6. The page 'Sign in' of the website must contain a field for entering a password 
+
 	Preconditions: User must not be logged in
+	
 	STR: 1.Go to the https://localhost:3000/signin
+	
 	     2.Checking for the presence of a field for entering a password
 
 	ER: Password field is present
 
 7. The password field on the page 'Sign in' must be titled 'Password'
+
 	Preconditions: User must not be logged in
+	
 	STR: 1.Go to the https://localhost:3000/signin
+	
 	     2.Checking the name of the field for entering password
 
 	ER: The password input field is titled 'Password'
 
 8. The checkbox on the page 'Sign in' for storing user data must be present
+
 	Preconditions: User must not be logged in
+	
 	STR: 1.Go to the https://localhost:3000/signin
+	
 	     2.Checking the presence of a checkbox to remember user data
 
 	ER: Checkbox for storing user data is present
 
 9. The checkbox for storing user data on the page 'Sign in' must be called 'Remember me'
+
 	Preconditions: User must not be logged in
+	
 	STR: 1.Go to the https://localhost:3000/signin
+	
 	     2.Checking the name of the checkbox to remember user data
 
 	ER: The checkbox for storing user data is called 'Remember me'
 
 10. The page 'Sign in' must have a button to confirm user data
+
 	Preconditions: User must not be logged in
+	
 	STR: 1.Go to the https://localhost:3000/signin
+	
 	     2.Check for the presence of a button to confirm user data
 
 	ER: Button for confirming user data is present
 
 11. The button for confirming user data on the page 'Sign in' should be called 'SIGN IN'
+
 	Preconditions: User must not be logged in
+	
 	STR: 1.Go to the https://localhost:3000/signin
+	
 	     2.Check the title button to confirm user data
 
 	ER: The button for confirming user data is called 'SIGN IN'
 
 12. The page 'Sign in' must have a link for redirecting to the page 'Sign up'
+
 	Preconditions: User must not be logged in
+	
 	STR: 1.Go to the https://localhost:3000/signin
+	
 	     2.Checking for a link to redirect to the page 'Sign up'
 
 	ER: Link for redirecting to the page 'Sign up' is present
 
 13. The page 'Sign in' must have a link for redirecting to the page 'Sign up'
+
 	Preconditions: User must not be logged in
+	
 	STR: 1.Go to the https://localhost:3000/signin
+	
 	     2.Checking for a link to redirect to the page 'Sign up'
 
 	ER: Link for redirecting to the page 'Sign up' is present
 
-14. The link on the page 'Sign in' for redirecting to the page 'Sign up' must be 
+14. The link on the page 'Sign in' for redirecting to the page 'Sign up' must be
+ 
 	called 'Don't have an account? Sign Up'
+	
 	Preconditions: User must not be logged in
+	
 	STR: 1.Go to the https://localhost:3000/signin
+	
 	     2.Checking the link name
 
 	ER: The link is called 'Don't have an account? Sign Up'
 
 15. The footer of the 'Sign in' page must contain a link to redirect to the website 'cypress.io'
+
 	Preconditions: User must not be logged in
+	
 	STR: 1.Go to the https://localhost:3000/signin
+	
 	     2.Check if the footer of the 'Sign in' page contains a link to redirect to the 	      website 'cypress.io'
 
 	ER: The footer of the 'Sign in' page contains a link to redirect to the website 		    'cypress.io'
