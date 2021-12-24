@@ -383,6 +383,27 @@ describe('Sign up and Sign in form tests', () => {
         .should('be.visible')
         .should('contain', 'Password must contain at least 4 characters');
     });
+    it('User login check with invalid data ', () => {
+        cy.get('.MuiGrid-root > a')
+        .click();
+        cy.get('#username')
+        .should('exist')
+        .should('be.visible')
+        .type('Test');
+        cy.get('#password')
+        .should('exist')
+        .should('be.visible')
+        .type('1111');
+        cy.get('.MuiButton-label')
+        .click();
+        cy.get('.MuiAlert-icon > .MuiSvgIcon-root')
+        .should('exist')
+        .should('be.visible');
+        cy.get('.MuiAlert-message')
+        .should('exist')
+        .should('be.visible')
+        .should('contain', 'Username or password is invalid');
+    });
     it('User login check ', () => {
         cy.get('.MuiGrid-root > a')
         .click();
