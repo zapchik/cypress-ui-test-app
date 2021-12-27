@@ -404,6 +404,37 @@ describe('Sign up and Sign in form tests', () => {
         .should('be.visible')
         .should('contain', 'Username or password is invalid');
     });
+    it('Checking the color of text and background', () => {
+        cy.get('.MuiGrid-root > a')
+        .click();
+        cy.get('#username')
+        .should('exist')
+        .should('be.visible')
+        .type('Test');
+        cy.get('#password')
+        .should('exist')
+        .should('be.visible')
+        .type('1111');
+        cy.get('.MuiButton-label')
+        .click();
+        cy.get('.MuiAlert-icon > .MuiSvgIcon-root')
+        .should('exist')
+        .should('be.visible');
+        cy.get('.MuiAlert-message')
+        .should('exist')
+        .should('be.visible')
+        .should('contain', 'Username or password is invalid');
+        cy.get('div.MuiPaper-root.MuiAlert-root.MuiAlert-standardError')
+        .should('have.css', 'background-color', 'rgb(253, 236, 234)')
+        .should('have.css', 'color', 'rgb(97, 26, 21)');
+        cy.get('svg.makeStyles-logo-22')
+        .should('have.css', 'color', 'rgb(63, 81, 181)');
+        cy.get('.MuiButton-label')
+        .should('have.css', 'color', 'rgb(255, 255, 255)')
+        .should('have.css', 'background-color', 'rgba(0, 0, 0, 0)');
+        //cy.get('#root > div > main > div.makeStyles-paper-11 > form > div.MuiGrid-root.MuiGrid-container > div:nth-child(2) > a')
+        //.should('have.css', 'color', 'webkit-link');
+    });
     it('User login check ', () => {
         cy.get('.MuiGrid-root > a')
         .click();

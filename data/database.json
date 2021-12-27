@@ -76,26 +76,26 @@
       "modifiedAt": "2020-05-21T15:15:33.944Z"
     },
     {
-      "id": "QcjrmMruF",
-      "uuid": "d02038a1-09a3-45fd-966b-9833a0ddbecb",
+      "id": "K2Mf37i52",
+      "uuid": "59dc4d49-283a-425f-8e6e-7713e40611b7",
       "firstName": "Evgen",
       "lastName": "Toporovsky",
       "username": "Evgen77",
-      "password": "$2a$10$Fhv5bCwaVADG4BTXiL8Ph.YI3eDR9gatubR6StCmUJjazENA/UZTa",
+      "password": "$2a$10$TnGAD5OZnBQPzofRhsnB1uX/P/LbUjxq83ZKIyv2WMx.0iwrxunXq",
       "balance": 0,
-      "createdAt": "2021-12-24T07:45:57.743Z",
-      "modifiedAt": "2021-12-24T07:45:57.743Z"
+      "createdAt": "2021-12-27T09:38:49.176Z",
+      "modifiedAt": "2021-12-27T09:38:49.176Z"
     },
     {
-      "id": "VL-Geo3E_",
-      "uuid": "acd15dbb-8668-4db6-bbbd-145b059dcef6",
+      "id": "z-7eDPlqS",
+      "uuid": "5f12fe16-ecf4-43ab-9d7b-b25492cfbec9",
       "firstName": "Evgen",
       "lastName": "Toporovsky",
       "username": "Evgen77",
-      "password": "$2a$10$7GsBqAK5siSiFiGBjDTMlesWF6AI/DBK7hdqLxPbZMMVUx4XcDM..",
+      "password": "$2a$10$0BCc26iwwSltF0rLJmg3KOGeJYj2LaHlbJYbmdwxFXMBiTECRlSea",
       "balance": 0,
-      "createdAt": "2021-12-24T07:55:56.908Z",
-      "modifiedAt": "2021-12-24T07:55:56.908Z"
+      "createdAt": "2021-12-27T10:23:53.011Z",
+      "modifiedAt": "2021-12-27T10:23:53.011Z"
     }
   ],
   "contacts": [
@@ -275,17 +275,6 @@
       "isDeleted": false,
       "createdAt": "2019-09-30T14:20:07.043Z",
       "modifiedAt": "2020-05-21T22:40:28.910Z"
-    },
-    {
-      "id": "bt9DkDUPW",
-      "uuid": "449fd17f-5515-4c43-b584-8f0405c8561e",
-      "userId": "QcjrmMruF",
-      "bankName": "ggggg",
-      "accountNumber": "947685121",
-      "routingNumber": "947685121",
-      "isDeleted": false,
-      "createdAt": "2021-12-24T07:51:13.789Z",
-      "modifiedAt": "2021-12-24T07:51:13.789Z"
     }
   ],
   "transactions": [
