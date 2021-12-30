@@ -76,26 +76,15 @@
       "modifiedAt": "2020-05-21T15:15:33.944Z"
     },
     {
-      "id": "K2Mf37i52",
-      "uuid": "59dc4d49-283a-425f-8e6e-7713e40611b7",
+      "id": "iQ2Q__pQI",
+      "uuid": "0cebca50-ae33-4232-baa6-b44dcd657b26",
       "firstName": "Evgen",
       "lastName": "Toporovsky",
       "username": "Evgen77",
-      "password": "$2a$10$TnGAD5OZnBQPzofRhsnB1uX/P/LbUjxq83ZKIyv2WMx.0iwrxunXq",
+      "password": "$2a$10$9bpVOSKcHr99u4gQq34qzOzEsLdqKS.lA4VrrvgdyjgqZVIRl3rSO",
       "balance": 0,
-      "createdAt": "2021-12-27T09:38:49.176Z",
-      "modifiedAt": "2021-12-27T09:38:49.176Z"
-    },
-    {
-      "id": "z-7eDPlqS",
-      "uuid": "5f12fe16-ecf4-43ab-9d7b-b25492cfbec9",
-      "firstName": "Evgen",
-      "lastName": "Toporovsky",
-      "username": "Evgen77",
-      "password": "$2a$10$0BCc26iwwSltF0rLJmg3KOGeJYj2LaHlbJYbmdwxFXMBiTECRlSea",
-      "balance": 0,
-      "createdAt": "2021-12-27T10:23:53.011Z",
-      "modifiedAt": "2021-12-27T10:23:53.011Z"
+      "createdAt": "2021-12-30T10:42:38.389Z",
+      "modifiedAt": "2021-12-30T10:42:38.389Z"
     }
   ],
   "contacts": [
