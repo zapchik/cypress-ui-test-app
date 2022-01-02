@@ -74,17 +74,6 @@
       "balance": 75369,
       "createdAt": "2020-02-11T21:26:46.510Z",
       "modifiedAt": "2020-05-21T15:15:33.944Z"
-    },
-    {
-      "id": "iQ2Q__pQI",
-      "uuid": "0cebca50-ae33-4232-baa6-b44dcd657b26",
-      "firstName": "Evgen",
-      "lastName": "Toporovsky",
-      "username": "Evgen77",
-      "password": "$2a$10$9bpVOSKcHr99u4gQq34qzOzEsLdqKS.lA4VrrvgdyjgqZVIRl3rSO",
-      "balance": 0,
-      "createdAt": "2021-12-30T10:42:38.389Z",
-      "modifiedAt": "2021-12-30T10:42:38.389Z"
     }
   ],
   "contacts": [
