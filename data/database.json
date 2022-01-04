@@ -74,6 +74,17 @@
       "balance": 75369,
       "createdAt": "2020-02-11T21:26:46.510Z",
       "modifiedAt": "2020-05-21T15:15:33.944Z"
+    },
+    {
+      "id": "7lZaJpPQ4",
+      "uuid": "07b6794a-a213-46cc-adb6-34017910d633",
+      "firstName": "Evgen",
+      "lastName": "Toporovsky",
+      "username": "Evgen77",
+      "password": "$2a$10$okUpH7CZ7qM5SbGtG7jHR.BnYNud/1dxkNOSLDzyn5OUoXkjprCaO",
+      "balance": 0,
+      "createdAt": "2022-01-04T02:15:29.353Z",
+      "modifiedAt": "2022-01-04T02:15:29.353Z"
     }
   ],
   "contacts": [

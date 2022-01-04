@@ -1,47 +1,49 @@
 /// <reference types="cypress" />
-//import { sign } from "crypto";
+
 import ObjectPage from "./PageObject/ObjectPage";
+import TestData from "/home/zapchik/Work/cypress-ui-test-app/cypress/integration/PageObject/TestData";
 describe('Signin page tests', () => {
-    it('Check the page logos,titles,links', () => {
-        const signin = new ObjectPage ();
+    const signin = new ObjectPage ();
+    const data = TestData;
+
+    beforeEach(function() {
         signin.navigateSignin();
+        
+      });
+    it('The `Sign In` page should contain logos,titles,links', () => {
         signin.checkLogo1();
         signin.checkLogo2();
-        signin.checkSigninLogo();
-        signin.checkRememberMeTitle();
-        signin.checkDontHaveAnAccountLink();
-        signin.checkBuiltByTitle();
+        signin.checkLogo1Logo2Color(data.color6);
+        signin.checkHeader(data.header1,data.color3);
+        signin.checkRememberMeTitle(data.header2,data.color3);
+        signin.checkDontHaveAnAccountLink(data.color4,data.link1);
+        signin.checkBuiltByTitle(data.color5,data.header3);
+        signin.checkCypressIoLink();
     });
-    it('Check the presence of the required fields', () => {
-        const signin = new ObjectPage ();
-        signin.navigateSignin();
-        signin.allFieldsCheck();
+    it('The `Sign in` page should contain required fields, checkboxes and buttons', () => {
+        signin.allFieldsCheck(data.placeholder1,data.placeholder2);
+        signin.checkCheckbox();
     });
     it('check the color and message of the fields when entering invalid data', () => {
-        const signin = new ObjectPage ();
-        signin.navigateSignin();
-        signin.enterShortPassword();
-        signin.enterBlankUsername();
-        signin.usernameFieldErrorColorCheck();
-        signin.passwordFieldErrorColorCheck();
-        signin.checkErrorMessageAndColor();
-        signin.checkBorderColor();
+        signin.enterPassword(data.shortPassword);
+        signin.enterUsername(data.blankUsername);
+        signin.usernameFieldErrorColorCheck(data.placeholder1,data.color2);
+        signin.passwordFieldErrorColorCheck(data.placeholder2,data.color2);
+        signin.checkErrorMessageAndColor(data.error2,data.color2);
+        signin.checkBorderColor(data.color2);
     });
     it('Check error message', () => {
-        const signin = new ObjectPage ();
-        signin.navigateSignin();
-        signin.enterWrongUsername();
-        signin.enterWrongPassword();
+        signin.enterUsername(data.wrongUsername);
+        signin.enterPassword(data.wrongPassword);
         signin.submit();
-        signin.checkErrorMessage();
+        signin.checkErrorMessage(data.error1,data.color1,data.background1);
+        signin.checkErrorIcon(data.color2,data.background1);
     });
     it('Sign in with valid data', () => {
-        const signin = new ObjectPage ();
-        signin.navigateSignin();
-        signin.enterUsername();
-        signin.enterPassword();
+        signin.enterUsername(data.correctUsername);
+        signin.enterPassword(data.correctPassword);
         signin.submit();
-        signin.checkSuccess();
+        signin.checkSuccess(data.correctUsername);
     });
 
 });

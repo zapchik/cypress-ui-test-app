@@ -1,0 +1,32 @@
+
+{
+        "shortPassword" : "11",
+        "wrongPassword" : "123456",
+        "correctPassword" : "22041977",
+        "blankUsername" : "{selectall}",
+        "wrongUsername" : "Evgen77Test",
+        "correctUsername" : "Evgen77",
+    
+    
+        "error1" : "Username or password is invalid",
+        "error2" : "Username is required",
+        "error3" : "Password must contain at least 4 characters",
+
+    
+        "main1" : "rgb(97, 26, 21)",
+        "main2" : "rgb(244, 67, 54)",
+        "main3" : "rgba(0, 0, 0, 0.87)",
+        "main4" : "rgb(0, 0, 238)",
+        "main5" : "rgba(0, 0, 0, 0.54)",
+        "main6" : "rgb(63, 81, 181)",
+        "background1" : "rgba(0, 0, 0, 0)",
+    
+        "header1" : "Sign in",
+        "header2" : "Remember me",
+        "header3" : "Built by",
+        "link1" : "Don't have an account? Sign Up",
+        "placeholder1" : "Username",
+        "placeholder2" : "Password"
+    
+    
+}
