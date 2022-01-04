@@ -6,6 +6,8 @@
         "blankUsername" : "{selectall}",
         "wrongUsername" : "Evgen77Test",
         "correctUsername" : "Evgen77",
+        "correctFirstname" : "Evgen",
+        "correctLastname" : "Toporovsky",
     
     
         "error1" : "Username or password is invalid",
@@ -24,9 +26,14 @@
         "header1" : "Sign in",
         "header2" : "Remember me",
         "header3" : "Built by",
+        "header4" : "Sign Up",
         "link1" : "Don't have an account? Sign Up",
         "placeholder1" : "Username",
-        "placeholder2" : "Password"
+        "placeholder2" : "Password",
+        "placeholder3" : "First Name",
+        "placeholder4" : "Last Name",
+        "placeholder5" : "Confirm Password",
+        "placeholder6" : "*"
     
     
 }

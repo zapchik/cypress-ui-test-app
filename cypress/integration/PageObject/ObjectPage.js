@@ -118,25 +118,46 @@ class SigninPage {
         
     }
     checkCheckbox() {
-        /*cy.get('.MuiGrid-root > a')
-        .should('be.visible')
-        .click();*/
         cy.get('input.PrivateSwitchBase-input-14')
         .click()
         .should('be.checked');
-        /*cy.get('.MuiGrid-root > a')
-        .click();*/
         cy.get('input.PrivateSwitchBase-input-14')
         .click()
         .should('not.be.checked');
     }
     /// The data below refers to the `Sign Up` page
-    checkHaveAnAccountSigninLink() {
+    checkHaveAnAccountSigninLink(color) {
         cy.get('.MuiGrid-root > a')
         .should('be.visible')
-        .should('have.css','color','rgb(0, 0, 238)')
+        .should('have.css','color',color)
         .should('have.attr','href','/signin')
         .should('contain', `Have an account? Sign In`)
+    }
+    allFieldsCheckSignUp(text1,text2,text3,text4,text5,text6) {
+        cy.get('fieldset.PrivateNotchedOutline-root-6.MuiOutlinedInput-notchedOutline')
+        .should('be.visible')
+        .should('contain', text1)
+        .should('contain', text2)
+        .should('contain', text3)
+        .should('contain', text4)
+        .should('contain', text5)
+        .should('contain', text6)
+        return this
+    }
+    enterFirstName (fnm) {
+        cy.get('#firstName')
+        .type(fnm)
+        return this
+    }
+    enterLastName (lnm) {
+        cy.get('#lastName')
+        .type(lnm)
+        return this
+    }
+    enterConfirmPassword (cpsw) {
+        cy.get('#confirmPassword')
+        .type(cpsw)
+        return this
     }
 }    
 export default SigninPage
