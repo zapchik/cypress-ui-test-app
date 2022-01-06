@@ -23,3 +23,12 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+Cypress.Commands.add('clickButton', () => {
+    cy.get('.MuiButton-label').contains('Sign').click()
+});
+Cypress.Commands.add('clickLink', () => {
+    cy.get('.MuiGrid-root.MuiGrid-item').contains('an account').click()
+})
+  
+
+  

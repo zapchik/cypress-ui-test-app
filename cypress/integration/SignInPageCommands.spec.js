@@ -1,16 +1,12 @@
 /// <reference types="cypress" />
 
-//import { ceil } from "cypress/types/lodash";
-//import cypress from "cypress";
 import ObjectPage from "./PageObject/ObjectPage";
-//import TestData from "/home/zapchik/Work/cypress-ui-test-app/cypress/integration/PageObject/TestData";
-//import TestElements from "/home/zapchik/Work/cypress-ui-test-app/cypress/integration/PageObject/TestElements.json";
-//import command from "/home/zapchik/Work/cypress-ui-test-app/cypress/integration/support/commands.js"
-//cypress.myenv();
+import TestData from "/home/zapchik/Work/cypress-ui-test-app/cypress/integration/PageObject/TestData";
+import TestElements from "/home/zapchik/Work/cypress-ui-test-app/cypress/integration/PageObject/TestElements.json";
 describe('Signin page tests', () => {
     const signin = new ObjectPage ();
-    const data = Cypress.env();
-    const Element = Cypress.env();
+    const data = TestData;
+    const Element = TestElements;
 
     beforeEach(function() {
         signin.navigateSignin();
@@ -22,7 +18,7 @@ describe('Signin page tests', () => {
         signin.Logo2()
         .should('be.visible');
         signin.Logo1Logo2Color()
-        .should('have.css', 'color',data.color6);
+        .should('have.css', 'color', data.color6);
         signin.Header()
         .should('be.visible')
         .should('contain', data.header1)
@@ -33,13 +29,13 @@ describe('Signin page tests', () => {
         .should('have.css', 'color', data.color3);
         signin.DontHaveAnAccountLink()
         .should('be.visible')
-        .should('have.css','color', data.color4)
+        .should('have.css','color',data.color4)
         .should('have.attr','href','/signup')
         .should('contain', data.link1);
         signin.BuiltByTitle()
         .should('be.visible')
         .should('have.css', 'color', data.color5)
-        .and('contain', data.header3);
+        .and('contain',data.header3);
         signin.checkCypressIoLink();
     });
     it('The `Sign in` page should contain required fields, checkboxes and buttons', () => {
@@ -73,17 +69,14 @@ describe('Signin page tests', () => {
         .should('contain', data.error3)
         .should('have.css', 'color', data.color2);
         signin.BorderColor()
-        .should('be.visible')
         .should('have.css', 'border-color', data.color2);
     });
     it('The link on the `Sign in` page should redirect the user to the `Sign up` page', () => {
-        signin.link()
-        .click();
+        cy.clickLink();
         signin.SignInUpHeader()
         .should('be.visible')
         .should('contain','Sign Up');
-        signin.link()
-        .click();
+        cy.clickLink();
         signin.SignInUpHeader()
         .should('be.visible')
         .should('contain','Sign in');
@@ -93,8 +86,7 @@ describe('Signin page tests', () => {
         .type(data.wrongUsername);
         signin.Password()
         .type(data.wrongPassword);
-        signin.Button()
-        .click();
+        cy.clickButton();
         signin.ErrorMessage()
         .should('be.visible')
         .should('contain', data.error1)
@@ -110,7 +102,7 @@ describe('Signin page tests', () => {
         .type(data.correctUsername);
         signin.choiceElement(Element.Password)
         .type(data.correctPassword);
-        signin.submit();
+        cy.clickButton();
         signin.choiceElement(Element.UsernameOnPage)
         .should('contain',data.correctUsername);
     });

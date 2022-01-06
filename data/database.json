@@ -76,37 +76,15 @@
       "modifiedAt": "2020-05-21T15:15:33.944Z"
     },
     {
-      "id": "7lZaJpPQ4",
-      "uuid": "07b6794a-a213-46cc-adb6-34017910d633",
+      "id": "A2gEVMWZy",
+      "uuid": "ad16822b-cf9e-412e-a055-c11c64a39800",
       "firstName": "Evgen",
       "lastName": "Toporovsky",
       "username": "Evgen77",
-      "password": "$2a$10$okUpH7CZ7qM5SbGtG7jHR.BnYNud/1dxkNOSLDzyn5OUoXkjprCaO",
+      "password": "$2a$10$2dTmeSTZBpyyGHYo4u4xTuBMLHGx7403ahawwkFdE2LXjGQWy1JgS",
       "balance": 0,
-      "createdAt": "2022-01-04T02:15:29.353Z",
-      "modifiedAt": "2022-01-04T02:15:29.353Z"
-    },
-    {
-      "id": "jlH-G6qVT",
-      "uuid": "dcf5bc65-030f-4f82-9051-94a058608daa",
-      "firstName": "Evgen",
-      "lastName": "Toporovsky",
-      "username": "Evgen77",
-      "password": "$2a$10$pUG6lhGeYr9LRbxI1MxtBOoOjEz0KiwuO7zQqYnzVgpEIaxuxwy06",
-      "balance": 0,
-      "createdAt": "2022-01-04T11:12:12.932Z",
-      "modifiedAt": "2022-01-04T11:12:12.932Z"
-    },
-    {
-      "id": "cDwe2fgok",
-      "uuid": "c3fd5c7e-db0b-4ca1-8f96-4fe0232d7c3d",
-      "firstName": "Evgen",
-      "lastName": "Toporovsky",
-      "username": "Evgen77",
-      "password": "$2a$10$ieWTXnpaqwcHACQOLTIbseAEMnou9LjccI9/XfBBY7X/Ox9kCeD1O",
-      "balance": 0,
-      "createdAt": "2022-01-04T11:15:18.541Z",
-      "modifiedAt": "2022-01-04T11:15:18.541Z"
+      "createdAt": "2022-01-06T03:13:12.411Z",
+      "modifiedAt": "2022-01-06T03:13:12.411Z"
     }
   ],
   "contacts": [
