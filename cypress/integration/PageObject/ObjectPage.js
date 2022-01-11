@@ -87,6 +87,9 @@ class SigninPage {
         return cy.get(selector)
         
     }
+    elementHome() {
+        return cy.get('[data-test="sidenav-home"] > .MuiListItemText-root > .MuiTypography-root')
+    }
     link() {
         return cy.get('.MuiGrid-root.MuiGrid-item')
         .contains('an account')
@@ -127,6 +130,15 @@ class SigninPage {
         cy.get('#confirmPassword')
         .type(cpsw)
         return this
+    }
+    firstName() {
+        return cy.get('#firstName')
+    }
+    lastName() {
+        return cy.get('#lastName')
+    }
+    confirmPassword() {
+        return cy.get('#confirmPassword')
     }
 }    
 export default SigninPage

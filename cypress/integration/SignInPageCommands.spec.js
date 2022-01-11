@@ -1,12 +1,10 @@
 /// <reference types="cypress" />
 
 import ObjectPage from "./PageObject/ObjectPage";
-import TestData from "/home/zapchik/Work/cypress-ui-test-app/cypress/integration/PageObject/TestData";
-import TestElements from "/home/zapchik/Work/cypress-ui-test-app/cypress/integration/PageObject/TestElements.json";
 describe('Signin page tests', () => {
     const signin = new ObjectPage ();
-    const data = TestData;
-    const Element = TestElements;
+    const data = Cypress.env();
+    const Element = Cypress.env()
 
     beforeEach(function() {
         signin.navigateSignin();

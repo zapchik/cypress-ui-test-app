@@ -2,6 +2,8 @@
 
 //import { ceil } from "cypress/types/lodash";
 //import cypress from "cypress";
+//import { response } from "express";
+//import { useParams } from "react-router";
 import ObjectPage from "./PageObject/ObjectPage";
 //import TestData from "/home/zapchik/Work/cypress-ui-test-app/cypress/integration/PageObject/TestData";
 //import TestElements from "/home/zapchik/Work/cypress-ui-test-app/cypress/integration/PageObject/TestElements.json";
@@ -113,6 +115,20 @@ describe('Signin page tests', () => {
         signin.submit();
         signin.choiceElement(Element.UsernameOnPage)
         .should('contain',data.correctUsername);
+    });
+    it('Sign in with valid data', () => {
+        cy.intercept('POST', 'http://localhost:3001/login', {
+            fixture: 'userSignin.json',
+        });
+        signin.Username()
+        .type(data.wrongUsername);
+        signin.Password()
+        .type(data.correctPassword);
+        signin.Button()
+        .click();
+       
+        signin.elementHome()
+        .should('contain','Home');
     });
 
 })
